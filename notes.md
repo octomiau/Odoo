@@ -9,7 +9,7 @@ From a user's perspective, encountering "Buy Now" buttons everywhere can raise q
 
 However, it's important to note that the evaluation of this mock-up is contingent on specific project factors. When developing projects, it is important to base them on unique requirements, the target audience, scope, business objectives, and the goals of the actual project.
 
-# Notes: 
+# Notas: 
 Opté por utilizar íconos de Bootstrap para agilizar el proceso del mock-up, tomando en cuenta que no era una preocupación principal en esta etapa que fuese "pixel-perfect". En lugar de eso, me centré en alinearme con el diseño y concepto general. En un escenario de proyecto real o si fuera fundamental un diseño idéntico, habría invertido más tiempo en buscar minuciosamente íconos identicos o en diseñarlos personalmente en Illustrator.
 
 En cuanto a la jerarquía del mock-up, existen ciertos aspectos que requieren atención. Por ejemplo, algunos botones y secciones importantes pueden no proporcionar a los usuarios un camino claro para acceder a la información que necesitan. Sería beneficioso mejorar la experiencia del usuario refinando el diseño y haciendo que los elementos importantes sean más prominentes.
