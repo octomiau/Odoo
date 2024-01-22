@@ -2,7 +2,7 @@
 
 The Odoo Website Project is the web design of a modern web application showcasing a range of UI components and layouts. 
 
-<img src="/images/screenshot.png">
+<img src="/images/Screenshot.png">
 You can visit the hosted page in here: https://octomiau.github.io/Odoo/ 
 
 ## 🌟 Features:
