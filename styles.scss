@@ -1,0 +1,355 @@
+
+$primary: #028AFF;  
+$secondary: #7e7e7e; 
+$success: #5CCAA7;   
+$warning: #FEBE3D;  
+$dark: #161347;      
+
+
+$card-border-radius: 1rem;
+$btn-font-weight: bold;
+
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/*------ front page ------*/
+
+
+.fading-bar {
+  height: 1px;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0)); /* Transparent on the right */
+  width: 100%; /* Fulls width of the container */
+}
+
+.card {
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+}
+ 
+
+#front {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%); /* adjust '50px' for skewness */
+}
+
+#front .text-container {
+  max-width: 300px;
+}
+
+#front .logos img {
+  height: 25px;
+  margin-right: 30px;
+}
+
+#front .logos img:last-child {
+  margin-right: 0;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.credit-card {
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 31%, rgba(0, 212, 255, 1) 100%);
+}
+
+.credit-card-logo { /* Credit card logo styles. I used font-size because for now, I am using an icon*/
+  font-size: 4rem;
+  margin-left: 5%;
+  background: #ff762c;
+  background: linear-gradient(130deg, #ffea2c 5%, #ff8d1b 40%, #c50014 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.transaction-item {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding: 0.5rem 0;
+}
+
+.transaction-item:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+/*------ characteristics ------*/
+/*------ background dashed lines ------*/
+.container-with-background {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  height: 10%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1; /* background below the content */
+}
+
+#bg-image-1 {
+  background-image: url("images/dashed-curved2.svg");
+  top: 15%;
+}
+
+#bg-image-2 {
+  background-image: url("images/dashed-curved1.svg");
+  top: 40%;
+}
+
+#bg-image-3 {
+  background-image: url("images/dashed-curved2.svg");
+  top: 70%;
+}
+
+#bg-image-4 {
+  background-image: url("images/dashed-curved1.svg");
+  top: 90%;
+}
+
+#characteristics .col {
+  margin-block-end: 20%;
+}
+
+#characteristics .text-container {
+  max-width: 400px;
+}
+
+/*------ characteristics  ------*/
+/*------ row1 col left ------*/
+.card-top {
+  top: -150px;
+  right: -170px;
+  z-index: 2;
+  margin: 0;
+}
+
+.card-bottom {
+  top: 250px;
+  left: -30px;
+  z-index: 1; /* for card to be below the first one */
+  margin: 0;
+}
+
+/*------ awesome card ------*/
+.text-part {
+  font-weight: bold;
+  float: left; /* align text left */
+}
+
+.time-part {
+  font-weight: lighter;
+  float: right; /* align time right */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; /* clears the float */
+}
+
+.colored-bar1 {
+  height: 2px;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffc400 0%, #ffc400 50%, #cbc9c9 50%, #cbc9c9 100%);
+}
+
+.colored-bar2 {
+  height: 2px;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffc400 0%, #ffc400 70%, #cbc9c9 70%, #cbc9c9 100%);
+}
+
+.colored-bar3 {
+  height: 2px;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffc400 0%, #ffc400 80%, #cbc9c9 80%, #cbc9c9 100%);
+}
+
+/*------ row2 col right ------*/
+.profile-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-image {
+  width: 2.5rem;
+  margin: 0 -0.5rem; /* negative margin for overlap */
+  border: 2px solid #fff; /* border for separation */
+  position: relative;
+  z-index: 1;
+}
+
+.profile-image:first-child {
+  z-index: 3; /* left image */
+}
+
+.profile-image:nth-child(2) {
+  z-index: 2; /* middle image */
+}
+
+.icon-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+
+.fading-bar-card {
+  height: 2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #999999, rgba(255, 255, 255, 0));
+  width: 100%;
+}
+
+/*------ row3 col right ------*/
+.store-badge {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.google-play-badge {
+  width: auto;
+  height: 70px;
+}
+
+.app-store-badge {
+  width: auto;
+  height: 46px;
+}
+
+/*------ infinite solutions ------*/
+/*------ awards ------*/
+
+#awards {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  background-color: #dbdbdb;
+}
+
+#awards .card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+#awards .card:hover {
+  transform: translateY(-3px); /* slightly moves the card up on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* adds a shadow to lift the card */
+}
+
+#awards .card-img-top {
+  width: auto;
+  object-fit: cover;
+  padding-top: 25%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#awards .card-body {
+  padding-bottom: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*------ answers ------*/
+#answers .text-container {
+  text-align: center;
+}
+
+#answers .card {
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#answers .card-header {
+  background-color: #fff;
+  padding: 0.75rem 1.25rem;
+}
+
+#answers .btn-link {
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+}
+
+/*------ new project ------*/
+#project .text-container {
+  text-align: center;
+}
+
+/*------ footer ------*/
+#footer {
+  position: relative;
+  clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+}
+
+.footer-legal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  padding: 28px 0;
+  margin-top: 55px;
+}
+
+
+
+.copyright-menu ul {
+  text-align: right;
+  margin: 0;
+  opacity: 0.5;
+  
+}
+
+.copyright-menu li {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+
+#footer .col {
+  margin-block-start: 3%;
+}
+
+#Footer .fading-bar {
+  height: 0.5px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #a2a2a2, rgba(255, 255, 255, 0));
+  width: 100%;
+  margin-top: 5%;
+}
+
+/*# sourceMappingURL=styles.scss.map */
